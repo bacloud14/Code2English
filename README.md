@@ -1,20 +1,21 @@
 # Code2English
-Code2English helps developers, UX designers and others fill in data shifted with code with a better natural language.
+Code2English helps developers, UX designers and others fill in data shipped with code with a better natural language.
 
-It simply ingests your SQL code and HTML and produces a better HTML or plain sentences.
+It simply ingests your *SQL code* and *HTML* and produces a better HTML or *plain sentences*.
 
 It better would be multilingual, because why not ? 
 
-Technically, a tiny JS standalone (browser) app, that scans a SQL or an HTML file, detects *input fields* with their *types* and finally suggests sentences to be put for final users.
+Technically, it is a tiny JS standalone (browser) app, that scans a SQL or an HTML file, detects *input fields* with their *types* and finally suggests sentences to be put for final users.
 
-Technically, again, it uses regex to discover 
+Technically, again, it uses regex to discover:
 
 - Input tags in HTML and based on a simple logic, propose a sentence
 - And the same goes for SQL columns. Sentences suggested would be used everywhere you want later in any form of application (back-end or front-end)
 
+In instance a boolean type of input like a radio box, would be interpreted as: *Do you like A or B*
 The thing is simple, here is an example:
 
-Having such HTML code:
+Having this HTML code:
 
 ```
 Show Checkboxes
@@ -26,7 +27,7 @@ Show Checkboxes
 </form>
 ```
 
---- Suggestions---
+--- Code2English suggests the followings ---
 
 ```
 Show Checkboxes
@@ -57,5 +58,12 @@ Show Checkboxes
 ```
 ...
 
+## todo:
+
+Everything is in progress and nothing is pushed yet except this readme.
+
+- build essential regex expressions to detect tags
+- build an AI to suggest sentences, and wrap them in HTML
+- build a UI for this
 
 
